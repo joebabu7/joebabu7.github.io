@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+}
+
+/* header */
+
+.header-line {
+    width: 100%;
+	background: #f1f1f1;
+}
+
+.screen{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.screen img{
+    margin-top: 20px;
+    width: 50%;
+}
+.header-line .topnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.header-line .topnav a{
+    margin: auto;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.header-line .topnav i{
+    margin: auto;
+    color: #000;
+    cursor: pointer;
+}
+.header-line .topnav .buttons{
+    width: 40%;
+    display: flex;
+}
+.header-line .topnav img{	
+    width: 90px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+}
+.header-line .topnav .buttons a{
+    display: inline-block;
+    font-weight: 700;
+    padding: 0 17px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.header-line .topnav .buttons button{
+    border: none;
+    background-color: #f1f1f1;
+    outline: none;
+}
+.header-line .topnav .buttons button:hover{
+    background-color: #e1e1e1;
+}
+.header-line .topnav .search{
+    width: 37.3%;
+    padding: 2.5px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+form.search input[type=text]{
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #e1e1e1;
+    background: #f1f1f1;
+}
+form.search input:focus{
+    outline: none;
+}
+form.search button{
+    width: 100%;
+    padding: 0 17px;
+    background: #e1e1e1;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+    cursor: pointer;
+}
+form.search button:hover {
+    background: rgb(140, 166, 187);
+}
+.header-line .container .topnav .icon{
+    display: flex;
+    margin: auto;
+}
+.header-line .container .topnav .icon i{
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.header-line .container .topnav .icon a{
+    margin-left: auto;
+}
+
+/*drop down heseg */
+  
+.header-line .topnav .icon .dropdown{
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+  
+.header-line .topnav .icon .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    margin: 16px 0;
+    z-index: 1;
+}
+  
+.header-line .topnav .icon .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* slide  */
+
+.container .slide{
+    max-width: 950px;
+    padding-top: 10px;
+    margin: auto;
+    z-index: 0;
+}
+
+/* body  */
+
+.menu-caption{
+    text-align: center;
+    padding: 50px 0;
+}
+.menu-caption h1{
+    font-weight: 700;
+}
+.container .box-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container .box-container .box{
+    width: 55%;
+    margin: 15px;
+    position: relative;
+    overflow:  hidden;
+}
+.container .box-container .box img{
+    width: 100%;
+    transition: .3s;
+}
+.container .box-container .box:hover img{
+	transform: scale(1.2);
+}
+.container .box-container .box .caption{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    transform: scaleY(0);
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 15px;
+}
+.container .box-container .box:hover .caption{
+    transform: scale(1);
+    cursor: pointer;
+}
+.container .cl-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.container .cl-container .cl{
+    width: 55%;
+    margin: 15px;
+    overflow:  hidden;
+}
+.container .cl-container .cl img{
+    width: 95%;
+    transition: .3s;
+    cursor: pointer;
+}
+.container .cl-container .cl p{
+    margin: 0;
+    cursor: pointer;
+}
+.container .cl-container .cl h6{
+    font-weight: 700;
+    margin: 0;
+    cursor: pointer;
+}
+.container .cl-container .cl:hover img{
+    transform: scale(1.);
+}
+
+/* footer */
+
+.footer-text{
+    padding-top: 100px;
+    text-align: center;
+}
+form.email input[type=text]{
+    width: 25%;
+    margin-top: 50px;
+    padding: 5px 0;
+    font-size: 17px;
+    background: #fafafa;
+    border: none;
+    border-bottom: 1px solid gray ;
+}
+form.email input:focus{
+    outline: none;
+}
+
+.footer .social{
+    display: flex;
+    justify-content: space-around;
+}
+.footer .social h6{
+    margin: 100px 0;
+    cursor: pointer;
+    font-size: 17px;
+}
+.footer .social i{
+    margin: 10px;
+}
+.footer .privacy{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer .privacy p{
+    margin-right: 30px;
+    margin-bottom: 170px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media(max-width: 769px){
+    .header-line .container .topnav .buttons{
+        display: none;
+    }
+    .header-line .topnav .icon .dropdown{
+        display: block;
+    }
+    
+    .header-line .topnav .icon .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .header-line .topnav .icon .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    form.email input[type=text]{
+        width: 35%;
+    }
+}
+@media(max-width: 426px){
+    .header-line .container .topnav{
+        justify-content: space-between;
+    }
+    .header-line .container .topnav a{
+        margin: 0;
+    }
+    .header-line .container .topnav .icon{
+        margin: 0;
+    }
+    .header-line .container .topnav .icon i{
+        padding-bottom: 3px;
+    }
+    .header-line .container .topnav .search{
+        display: none;
+    }
+    .header-line .container .topnav{
+        padding: 20px 0;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .container .cl-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .cl-container .cl .caption{
+        margin-top: 10px;
+        font-size: 13px;
+    }
+    .menu-caption h1{
+        font-size: 25px;
+    }
+    .menu-caption h3{
+        font-size: 18px;
+    }
+    .container .screen img{
+        width: 100%;
+    }
+
+    .footer-text h3{
+        font-size: 20px;
+    }
+
+    .footer .con .social p{
+        font-size: 10px;
+    }
+    .footer .container .privacy p{
+        font-size: 10px;
+    }
+    form.email input[type=text]{
+        width: 60%;
+    }
+}
